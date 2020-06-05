@@ -215,7 +215,7 @@ function processReviews(products, reviews) {
     if (err) throw err;
 
     console.log("Reviews file uploaded successfully!");
-    ftp.close();
+    ftp.end();
 
   });
 
