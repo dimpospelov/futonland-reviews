@@ -1,0 +1,17 @@
+{
+  "name": "futonland-reviews",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "fast-csv": "^4.3.0",
+    "ftp": "^0.3.10",
+    "request": "^2.88.2",
+    "xml": "^1.0.1"
+  }
+}
