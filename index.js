@@ -296,7 +296,15 @@ function createOrders(orderInfoExport, orderItemInfoExport) {
       continue;
     }
 
-    // Check for order status
+    // Exclude channels
+    if (orderInfoExport[i]['orderSource'] == "Pfcovers.com") {
+      console.log(orderInfoExport[i]['orderId'] + " - pfcovers.com");
+      orderInfoExport.splice(i,1); 
+      i--;
+      continue;
+    }
+
+    // Exclude canceled orders
     if (["Voided","Canceled Order","Work Order"].indexOf(orderInfoExport[i]['orderStatus']) > -1) {
       console.log(orderInfoExport[i]['orderId'] + " - " + orderInfoExport[i]['orderStatus']); 
       orderInfoExport.splice(i,1); 
