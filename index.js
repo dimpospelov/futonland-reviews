@@ -103,7 +103,7 @@ function convertProduct(file, callback) {
 function checkReviews(products) {
 
   var options = { method: 'GET',
-    url: 'https://stamped.io/api/widget/reviews?apiKey=pubkey-gS9y55G786s7hhWu14I5gI8Q0cO7uP&storeUrl=info%40futonland.com&take=0'
+    url: 'https://stamped.io/api/widget/reviews?apiKey=pubkey-gS9y55G786s7hhWu14I5gI8Q0cO7uP&storeUrl=info%40futonland.com&take=1'
   };
   request(options, function (error, response, body) {
     if (error) throw new Error(error);
