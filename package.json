@@ -9,7 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "fast-csv": "^4.3.0",
+    "fast-csv": "^4.3.6",
     "ftp": "^0.3.10",
     "request": "^2.88.2",
     "xml": "^1.0.1"
