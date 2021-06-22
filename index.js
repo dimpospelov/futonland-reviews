@@ -303,6 +303,12 @@ function createOrders(orderInfoExport, orderItemInfoExport) {
       i--;
       continue;
     }
+    if (orderInfoExport[i]['orderSource'] == "Wholesale Phone Orders") {
+      console.log(orderInfoExport[i]['orderId'] + " - wholesale phone orders");
+      orderInfoExport.splice(i,1); 
+      i--;
+      continue;
+    }
 
     // Exclude canceled orders
     if (["Voided","Canceled Order","Work Order"].indexOf(orderInfoExport[i]['orderStatus']) > -1) {
